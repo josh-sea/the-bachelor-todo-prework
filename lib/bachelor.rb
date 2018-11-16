@@ -76,7 +76,7 @@ def get_average_age_for_season(data, season)
 #        binding.pry
       end
 #      binding.pry
-      return ((sum + 0.0)/ contestants.length).ceil
+      return ((sum + 0.0)/ contestants.length).round
     end
   end
 end
