@@ -62,4 +62,17 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  # code here
+  contestants_avg_ages = []
+  data.each do |seasons, contestants|
+#   binding.pry
+    for i in 0...contestants.length 
+ #    binding.pry
+      if contestants[i]["hometown"] == hometown
+#       binding.pry
+        hometown_counter += 1
+      end
+    end
+  end
+  return hometown_counter  
 end
