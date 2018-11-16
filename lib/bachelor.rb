@@ -69,7 +69,6 @@ def get_average_age_for_season(data, season)
         binding.pry
         contestants_avg_ages << contestants[i]["age"].to_i
   #       binding.pry
-        end
       end
     end
   end
