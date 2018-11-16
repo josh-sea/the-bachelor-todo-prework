@@ -51,9 +51,9 @@ def get_occupation(data, hometown)
   data.each do |seasons, contestants|
 #   binding.pry
     for i in 0...contestants.length 
- #    binding.pry
+#     binding.pry
       if contestants[i]["hometown"] == hometown
-       binding.pry
+#       binding.pry
         return contestants[i]["occupation"]
       end
     end
