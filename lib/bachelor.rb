@@ -67,10 +67,9 @@ def get_average_age_for_season(data, season)
   data.each do |seasons, contestants|
 #   binding.pry
     for i in 0...contestants.length 
- #    binding.pry
-      contestants[i]["age"]
+      binding.pry
+      contestants_avg_ages << contestants[i]["age"].to_i
 #       binding.pry
-        hometown_counter += 1
       end
     end
   end
