@@ -47,6 +47,17 @@ end
 
 def get_occupation(data, hometown)
   # code here
+  # code here
+  data.each do |seasons, contestants|
+#   binding.pry
+    for i in 0...contestants.length 
+ #    binding.pry
+      if contestants[i]["hometown"] == hometown
+       binding.pry
+        return contestants[i]["occupation"]
+      end
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
