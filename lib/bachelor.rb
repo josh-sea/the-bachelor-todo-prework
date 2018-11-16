@@ -51,9 +51,9 @@ def get_occupation(data, hometown)
   data.each do |seasons, contestants|
 #   binding.pry
     for i in 0...contestants.length 
- #    binding.pry
+#     binding.pry
       if contestants[i]["hometown"] == hometown
-       binding.pry
+#       binding.pry
         return contestants[i]["occupation"]
       end
     end
@@ -61,5 +61,22 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  contestants_avg_ages = []
+  data.each do |seasons, contestants|
+#   binding.pry
+    if seasons == season
+#     binding.pry
+      for i in 0...contestants.length 
+#        binding.pry
+        contestants_avg_ages << contestants[i]["age"].to_i
+      end
+      sum = 0
+      for i in 0...contestants_avg_ages.length
+        sum += contestants_avg_ages[i]
+#        binding.pry
+      end
+#      binding.pry
+      return ((sum + 0.0)/ contestants.length).round
+    end
+  end
 end
