@@ -68,7 +68,7 @@ def get_average_age_for_season(data, season)
 #   binding.pry
     for i in 0...contestants.length 
  #    binding.pry
-      contestants[i][]
+      contestants[i]["age"]
 #       binding.pry
         hometown_counter += 1
       end
